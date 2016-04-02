@@ -48,7 +48,7 @@ for f in args.files:
         continue
       if is_on:
         """ Process this gcode. """
-        print line
+        print(line)
         if re.match(gcode_regex, line):
           res = re.match(gcode_regex, line).groups()
           if res[1] in ['0', '1', '2', '3']:
